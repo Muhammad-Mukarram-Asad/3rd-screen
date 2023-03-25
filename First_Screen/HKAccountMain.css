@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+
+.whatYouHave-Container {
+  display: grid;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  height: 122px;
+}
+.whatYouHave-content {
+  grid-area: 1 / 1;
+  opacity: 100;
+  border-radius: 16px;
+}
+.whatYouHave-overlay {
+  grid-area: 1 / 1;
+  border-radius: 16px;
+}
+.mainGrid {
+  display: grid;
+  grid-template-columns: 2fr auto auto;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "info info info"
+    "spend iconArea iconArea";
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.info-area {
+  grid-area: info;
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.info-area > img {
+  margin-bottom: 5px;
+}
+.available-to-spend-area {
+  grid-area: spend;
+  padding-left: 30px;
+}
+.available-to-spend-area > .heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+
+  /* White */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+.spend-amount {
+  display: flex;
+  align-items: baseline;
+}
+.spend-amount > .currency {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* identical to box height, or 140% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.4px;
+
+  color: #ffffff;
+  margin-right: 5px;
+}
+.spend-amount > .amount {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  line-height: 40px;
+  /* identical to box height, or 125% */
+
+  display: flex;
+  align-items: center;
+
+  /* White */
+
+  color: #ffffff;
+}
+.account-icon-area {
+  grid-area: iconArea;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 25px;
+}
+.account-icon-area-btn-main {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 65px;
+  border: 0px;
+  background: white;
+  height: 56px;
+  width: 56px;
+}
+/* ******************************************************************************** */
+.my_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  margin-top: 30px;
+}
+
+.my_div h2{
+  font-weight: 600px;
+  line-height: 24px;
+  font-family: "Lato";
+  text-align: center;
+}
+.my_div p{
+  color: #757575;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Lato";
+  line-height: 24px;
+}
+#btn_primary{
+  height: 50px;
+  width: 343px;
+  left: 16px;
+  top: 625px;
+  border-radius: 10px;
+  background: #4799A6;
+  color: white;
+  border-color: white;
+}
+#btn_primary:hover{
+  cursor: pointer;
+  background-color: darkblue;
+  font-size: 20px;
+}
+.title{
+height: 24px;
+left: 144px;
+right: 142px;
+top: 16px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.1px;
+color: #2D2D2D;
+}
+
+.img{
+width: 338px;
+height: 225px;
+left: 19px;
+top: 167px;
+}
+
+#hr{
+  height: 0px;
+  width: 450px;
+  left: 0px;
+  top: 56px;
+  border-radius: nullpx;
+  border: 1px solid #D7D7D7;
+  margin-top: 30px;
+ 
+}
