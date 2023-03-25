@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+
+.AccountItem-Container {
+  display: grid;
+  border-radius: 16px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.AccountItem-overlay {
+  grid-area: 1 / 1;
+  border-radius: 16px;
+}
+.mainGrid-account {
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.1fr;
+  grid-gap: 0.5rem;
+  grid-template-areas:
+    "info info info"
+    "spend iconArea iconArea"
+    "deactivate deactivate deactivate";
+}
+.badge {
+  grid-area: deactivate;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.badge > p {
+  margin: 0px;
+  width: 92px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600px;
+  letter-spacing: 0.4px;
+  background-color: #ffffff80;
+  color: #757575;
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.AccountItem-info-account-area {
+  grid-area: info;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 30px;
+}
+.AccountItem-info-account-area > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.1px;
+  cursor: pointer;
+
+  /* White */
+
+  color: #ffffff;
+}
+
+.AccountItem-available-to-spend-area {
+  grid-area: spend;
+  padding-left: 30px;
+}
+.AccountItem-available-to-spend-area > .heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+
+  /* White */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+.AccountItem-spend-amount {
+  display: flex;
+  align-items: baseline;
+}
+.AccountItem-spend-amount > .currency {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* identical to box height, or 140% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.4px;
+
+  color: #ffffff;
+  margin-right: 5px;
+}
+.AccountItem-spend-amount > .amount {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  line-height: 40px;
+  /* identical to box height, or 125% */
+
+  display: flex;
+  align-items: center;
+
+  /* White */
+
+  color: #ffffff;
+}
+.AccountItem-account-icon-area {
+  grid-area: iconArea;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+}
+.AccountItem-account-icon-area-btn-main {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 65px;
+  border: 0px;
+  background: #ffffff;
+  height: 56px;
+  width: 56px;
+}
+.AccountItem-moreArea {
+  background-color: transparent;
+  cursor: pointer;
+}
+.title {
+  height: 24px;
+  left: 144px;
+  right: 142px;
+  margin-top: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #2d2d2d;
+}
+
+#hr {
+  height: 0px;
+  width: 450px;
+  left: 0px;
+  border-radius: nullpx;
+  border: 2px solid #3e3e3e;
+  margin-top: 30px;
+}
+
+.accounts_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
+.accounts_div > h2 {
+  width: 196px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+  /* Gray / Base 600 */
+
+  color: #2d2d2d;
+}
+#span {
+  color: #4799a6;
+  font-size: 22px;
+  margin-top: 3px;
+}
+#accounts_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px 8px 8px;
+  gap: 4px;
+  font-size: 15px;
+  border-color: white;
+  padding-top: 10px;
+
+  width: 180px;
+  height: 40px;
+  background: #ffffff;
+  cursor: pointer;
+
+  /* Card */
+
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 28px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#accounts_btn:hover {
+  color: brown;
+  background-color: whitesmoke;
+  width: 200px;
+  height: 45px;
+}
