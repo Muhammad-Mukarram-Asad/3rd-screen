@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+.main_div_obs1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.img_div {
+  width: 400px;
+  height: 400px;
+  background-color: #edf6f8;
+  margin: 30px 0;
+}
+.img_div > img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+.h_p_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.h_p_div > h2 {
+  width: 228px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 15px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.h_p_div > p {
+  width: 296px;
+  height: 48px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #757575;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.circle_main_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  height: 50px;
+  margin: 30px 0;
+}
+#circle {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.btns_main_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: max-content;
+  margin: 10px auto;
+}
+.btns {
+  width: 190px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+#skip_btn {
+  background-color: #edf6f8;
+  color: #4799a6;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: 1px solid #4799a6;
+
+  /* position: absolute;
+height: 50px;
+left: 0px;
+right: 0px;
+top: calc(50% - 50px/2); */
+}
+
+#skip_btn:hover {
+  background-color: #4799a6;
+  color: #edf6f8;
+  font-size: 20px;
+  border-color: #edf6f8;
+}
+
+#next_btn {
+  background-color: #4799a6;
+  color: #edf6f8;
+  font-size: 18px;
+  border-color: #edf6f8;
+}
+
+#next_btn:hover {
+  background-color: #edf6f8;
+  color: #4799a6;
+  font-size: 20px;
+  border-color: #4799a6;
+}
+
+#getStarted_btn {
+  background-color: #edf6f8;
+  color: #4799a6;
+  font-size: 18px;
+  border: 1px solid #4799a6;
+  display: block;
+  margin: 5px auto;
+  /* transition: font-size,color,background-color 2s ease-in 2s; */
+}
+
+#getStarted_btn:hover {
+  background-color: darkgreen;
+  color: whitesmoke;
+  font-size: 20px;
+  border-color: white;
+  display: block;
+  margin: 5px auto;
+}
+
+/* Media Queries CSS Below: */
+
+@media (max-width: 320px) {
+  .main_div_obs1 {
+    max-width: 320px;
+    height: max-content;
+  }
+
+  .img_div {
+    max-width: 320px;
+    height: 350px;
+  }
+  .img_div > img {
+    max-width: 100%;
+    height: auto;
+  }
+  .h_p_div {
+    max-width: 320px;
+  }
+
+  .h_p_div > h2 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .h_p_div > p {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .circle_main_div {
+    max-width: 200px;
+  }
+
+  .btns_main_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 320px;
+    height: max-content;
+    margin: 10px auto;
+  }
+  .btns {
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+  }
+}
+
+/* Media Queries CSS Below: */
+
+@media (min-width: 321px) and (max-width: 425px) {
+  .main_div_obs1 {
+    max-width: 425px;
+    height: auto;
+  }
+
+  .img_div {
+    max-width: 425px;
+    height: 400px;
+  }
+  .img_div > img {
+    max-width: 100%;
+    height: auto;
+  }
+  .h_p_div {
+    max-width: 100%;
+    margin-top: 60px;
+  }
+
+  .h_p_div > h2 {
+    font-size: 24px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .h_p_div > p {
+    font-size: 22px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .circle_main_div {
+    max-width: 400px;
+  }
+
+  .btns_main_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 420px;
+    height: auto;
+    margin: 10px auto;
+  }
+  .btns {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 12px;
+  }
+
+  #getStarted_btn {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
